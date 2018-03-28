@@ -1,0 +1,18 @@
+[user]
+	name = Sergey Smirnov
+	email = sergey@smirnov.nyc
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	hist = log --pretty=format: '%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	files = diff --name-only HEAD HEAD^
+[push]
+	default = current
