@@ -33,3 +33,16 @@ export EDITOR='vim'
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# git aliases
+alias g="git"
+alias gcim='git commit -m "Merging with master"'
+alias gd="git diff"
+alias gco="git checkout"
+alias gs="git status -sb"
+alias gcom="git checkout master"
+alias gmm="git merge master"
+alias gpo="git push origin"
+alias gpl="git pull"
+alias gg="git grep"
+alias gb="git blame"
